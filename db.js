@@ -1,11 +1,17 @@
 const mongoose = require('mongoose');
-const mongoURL = 'mongodb://127.0.0.1:27017/hotels';
+require('dotenv').config();
+// const mongoURL = process.env.MONGODB_URL_LOCAL;
+const mongoURL = process.env.MONGODB_URL;
+
+// mongoose.connect(mongoURL)
+//   .then(() => console.log('MongoDB connected'))
+//   .catch(err => console.log('MongoDB connection error:', err));
 
 mongoose.connect(mongoURL);
 
 // mongoose.connect(mongoURL,{
 //     useNewUrlParser :true,
-//     useUnifiedTopology:true
+//     useUnifiedTopology:true 
 // })
 
 const db = mongoose.connection;

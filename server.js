@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
-const Menu =require('./models/Menu');
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 const { message } = require('prompt');
 app.use(bodyParser.json());
+const PORT = process.env.PORT || 3000;
 
 app.get('/',(req,res)=>{
     res.send('hello from hotel');
@@ -22,6 +23,6 @@ app.use('/menu',MenuItemRoutes);
 
 
 
-app.listen(3000 ,()=>{
+app.listen(PORT ,()=>{
     console.log("Listening to port 3000");
 });
