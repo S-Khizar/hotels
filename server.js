@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
+const prompt = require('prompt');
 require('dotenv').config();
 
 const bodyParser = require('body-parser');
 const { message } = require('prompt');
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
-
 app.get('/',(req,res)=>{
     res.send('hello from hotel');
 })
