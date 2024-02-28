@@ -1,12 +1,10 @@
 # Ignore node_modules directory
 node_modules/
 .env
-server2.js
-server4.js
-server9.js
+server*.js
 dbsampleserver.js
-greeting.txt
 notes.js
+greeting.txt
 notes.txt
 
 # Other entries...
