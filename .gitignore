@@ -1,10 +1,12 @@
 # Ignore node_modules directory
 node_modules/
 .env
-server*.js
-dbsampleserver.js
-notes.js
-greeting.txt
-notes.txt
+untrackdbsampleserver.js
+untrackgreeting.txt
+untracknotes.js
+untracknotes.txt
+untrackserver2.js
+untrackserver4.js
+untrackserver9.js
 
 # Other entries...
